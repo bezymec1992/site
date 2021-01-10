@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.head_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-menu {
+    padding-bottom: 40px;
+    display: flex;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+li a {
+    color: #828282;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+li a:hover {
+    color: black;
+}
+
+.logo {
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.logo_text {
+    margin-top: 23px;
+}
+
+.logo_img {
+    display: none;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.logo_img span {
+    color: gray;
+}
+
+.open-menu {
+    cursor: pointer;
+}
+
+.line3 {
+    background: black;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 33px;
+    line-height: 5px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: white;
+    color: black;
+}
+
+.close-popup {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    color: #828282;
+    font-weight: bold;
+}
+
+.menu li {
+    margin: 20px 0;
+    font-size: 44px;
+}
+
+.degree {
+    margin-top: 44px;
+    float: right;
+}
+
+.my_pictures {
+    width: 100%;
+}
+
+.my_pict {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.my_pict img {
+    width: 100%;
+}
+
+.my_pict_big {
+    display: none;
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.my_pict_big img {
+    max-width: 100%;
+}
+
+.me_text h3 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.me_text {
+    margin: 0 auto;
+    width: 316px;
+    text-align: center;
+    font-size: 18px;
+    padding: 40px;
+}
+
+.me_text p {
+    padding-top: 20px;
+}
+
+.about_me_text {
+    background: #F6F6F6;
+    margin-top: 50px;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills_info {
+    text-align: center;
+}
+
+.skills_info h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.frames {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.frames_content {
+    margin-bottom: 40px;
+}
+
+.frames_content p {
+    padding-top: 30px;
+}
+
+.stars {
+    margin: 0 auto;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.portfolio {
+    background: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.portfolio_content h3 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfolio_img img {
+    width: 100%;
+}
+
+.name {
+    text-decoration: underline;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.contact_info {
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.contact_info h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inf_cont {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+button {
+    max-width: 315px;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.sosial {
+    max-width: 316px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot {
+    font-size: 14px;
+    color: #828282;
+}
+
+@media (min-width: 675px) {
+    .open-menu {
+        display: none;
+    }
+    .head_content {
+        display: block;
+        margin-top: 35px;
+    }
+    .header-nav {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .logo_img {
+        display: block;
+    }
+    .main_logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .my_pict {
+        display: none;
+    }
+    .my_pict_big {
+        display: block;
+    }
+    .me_text {
+        width: 485px;
+    }
+    .frames {
+        display: flex;
+        justify-content: space-between;
+    }
+}
